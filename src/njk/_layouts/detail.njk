@@ -1,13 +1,18 @@
 {% extends '_layouts/base.njk' %}
-
+{% block page_title %}{{members.name}}{% endblock %}
 {% block content %}
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      {% block info %}{% endblock %}
+      <img src="assets/img/members/brian-may-bw.jpg" alt="Brian May" class="img-fluid">
     </div>
     <div class="col-sm-8">
-      {% block story %}{% endblock %}
+      <h2>{{ members.name }}</h2>
+      <h6>Born in Hampton, England</h6>
+      <h6>July 19, 1947 - present</h6>
+      <h6>Guitar, keyboard, vocals</h6>
+
+      {{ members.text | safe}}
 
     </div>
   </div>
