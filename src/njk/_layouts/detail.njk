@@ -4,13 +4,13 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      <img src="assets/img/members/brian-may-bw.jpg" alt="Brian May" class="img-fluid">
+      <img src="assets/img/members/{{members.image}}" alt="Brian May" class="img-fluid">
     </div>
     <div class="col-sm-8">
       <h2>{{ members.name }}</h2>
-      <h6>Born in Hampton, England</h6>
-      <h6>July 19, 1947 - present</h6>
-      <h6>Guitar, keyboard, vocals</h6>
+      <h6>{{ members.instruments }}</h6>
+      <h6>{{ members.birthdate }}</h6>
+      <h6>{{ members.birthplace }}</h6>
 
       {{ members.text | safe}}
 
