@@ -1,7 +1,7 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
-$body-bg: rgba(229, 77, 235, 0.911);
+$body-bg: rgba(195, 44, 201, 0.767);
 $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
@@ -34,4 +34,10 @@ $body-color: white;
 
 h1{
     font-family: 'Charm', cursive;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
